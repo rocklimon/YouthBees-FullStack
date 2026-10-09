@@ -14,7 +14,7 @@ import userRoutes from "./routes/user.router.js";
 import courseRoutes from "./routes/course.routes.js";
 import teacherRoutes from "./routes/teacher.routes.js";
 import serviceRoutes from "./routes/service.routes.js";
-import paymentRoutes from "./routes/payment.routes.js"; // 👈 ১. পেমেন্ট রাউট ইমপোর্ট করা হলো
+import paymentRoutes from "./routes/payment.routes.js"; 
 
 const app = express();
 
@@ -28,7 +28,7 @@ app.use("/api/user", userRoutes);
 app.use("/api/course", courseRoutes);
 app.use("/api/teacher", teacherRoutes);
 app.use("/api/service", serviceRoutes);
-app.use("/api/payment", paymentRoutes); // 👈 ২. পেমেন্ট এপিআই এন্ডপয়েন্ট কানেক্ট করা হলো
+app.use("/api/payment", paymentRoutes); 
 
 app.get("/", (req, res) => res.send("YouthBees API running"));
 
@@ -37,3 +37,6 @@ connectDB();
 app.listen(process.env.PORT || 5000, () =>
   console.log(`Server running on port ${process.env.PORT || 5000}`)
 );
+
+// 👇 Export app for Vercel serverless function
+export default app;
