@@ -16,7 +16,7 @@ import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/
 import { auth } from "../firebase";
 
 // Logo
-import logoImg from "../assets/logo/logo.jpg";
+import logoImg from "../assets/logo/logo.png";
 import API_BASE_URL from "../config/api";
 export default function Register() {
   const navigate = useNavigate();

@@ -14,7 +14,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 import API_BASE_URL from "../config/api";
 // Logo
-import logoImg from "../assets/logo/logo.jpg";
+import logoImg from "../assets/logo/logo.png";
 
 
 export default function Login() {
