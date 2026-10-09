@@ -1,0 +1,9 @@
+node_modules/
+youthbees-backend/node_modules/
+youthbees-client/node_modules/
+.env
+youthbees-backend/.env
+youthbees-client/.env
+dist/
+build/
+
